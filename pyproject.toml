@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "addrly"
+version = "1.0.0"
+description = "Official Python SDK for the Addrly email validation API"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Addrly", email = "support@addrly.app"}]
+keywords = ["email", "validation", "verification", "disposable", "spam", "mx", "domain", "addrly", "gate"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Email",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = ["requests>=2.20.0"]
+
+[project.urls]
+Homepage = "https://addrly.app"
+Documentation = "https://addrly.app/documentation"
+Repository = "https://github.com/addrly/addrly-python"
+
+[tool.setuptools.packages.find]
+where = ["src"]
